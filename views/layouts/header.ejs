@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Boots Cart</title>
+	<!--
+		CSS
+		============================================= -->
+	<link rel="stylesheet" href="assets/css/linearicons.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/themify-icons.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<link rel="stylesheet" href="assets/css/nice-select.css">
+	<link rel="stylesheet" href="assets/css/nouislider.min.css">
+	<link rel="stylesheet" href="assets/css/ion.rangeSlider.css" />
+	<link rel="stylesheet" href="assets/css/ion.rangeSlider.skinFlat.css" />
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link href="magiczoom/magiczoom.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body style="overflow-x:hidden;">
+	
+
+	<!-- Start Header Area -->
+	<header class="header_area sticky-header >
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light main_box">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="/home"><img src="assets/img/logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+	
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav ml-auto">
+							<li class="nav-item active"><a class="nav-link" href="/home">Home</a></li>
+							<li class="nav-item active"><a class="nav-link" href="/loadshop">Shop</a></li>
+							<li class="nav-item active"><a class="nav-link" href="/loadWishlist">Wishlist</a></li>
+							<li class="nav-item active"><a class="nav-link" href="/loadcart">Cart</a></li>
+							<% if (user) { %>
+								<li class="nav-item active">
+									<a class="nav-link" href="/userProfile">Profile</a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link" href="/logout">Logout</a>
+								</li>
+							<% } else { %>
+								<li class="nav-item active">
+									<a class="nav-link" href="/login">Login</a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link" href="/register">Register</a>
+								</li>
+							<% } %>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	
+	<style>
+		.header_area {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 999;
+		}
+	
+		.main_menu {
+			width: 100%;
+			margin: 0; /* Remove any default margin */
+			padding: 0; /* Remove any default padding */
+		}
+	
+		.navbar {
+			background-color: #fff; /* Specify your desired background color */
+			width: 100%; /* Make the navbar occupy the full width */
+			max-width: 100%; /* Ensure the navbar does not exceed the screen width */
+			margin: 0; /* Remove any margin */
+			padding: 0; /* Remove any padding */
+		}
+	</style>
+	
+	
+	<!-- End Header Area -->

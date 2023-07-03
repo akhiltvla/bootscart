@@ -1,0 +1,353 @@
+
+
+
+<%- include('../layouts/header.ejs') %>
+
+
+   
+
+    <div class="page" style="background-color: rgb(238, 234, 234);">
+
+    <!-- Start Banner Hero  -->
+    
+	<!-- start banner Area -->
+	<section class="banner-area">
+		<div class="container-fluid">
+			<div class="row fullscreen align-items-center justify-content-start">
+				<div class="col-lg-12">
+					<div class="active-banner-slider owl-carousel">
+						<!-- single-slide -->
+						<div class="row single-slide align-items-center d-flex">
+							<div class="col-lg-5 col-md-6">
+								<div class="banner-content">
+									<h1>Nike New <br>Collection!</h1>
+									<p>Air delivers on our most daring dream: helping every athlete feel the unparalleled sensation of walking on air,
+                                         while protecting the environment where we live and play. 
+                                        All Air soles contain at least 50% recycled materials, and are made with 100% renewable energy. Light on your feet. 
+                                        Lighter on waste.</p>
+									
+								</div>
+							</div>
+							<div class="col-lg-7">
+								<div class="banner-img">
+									<img class="img-fluid" src="assets/img/banner-img.png" alt="">
+								</div>
+							</div>
+						</div>
+						<!-- single-slide -->
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<% if(banner) {%>       
+        <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row p-5">
+                            <div class="mx-auto col-12">
+                                <img class="img-fluid" src="/uploads/<%=banner.image[0]%>" alt="">
+                            </div>
+                            <div class="col-lg-6 mb-0 d-flex align-items-center">
+                                <div class="text-align-left align-self-center">
+                                     <a class="btn btn-outline-light btn-success py-2 px-4 mt-3 animate__animated animate__fadeInUp"
+                                            href="/loadShop">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <% for(i=1;i<=banner.image.length;i++){%>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row p-5">
+                            <div class="mx-auto col-12">
+                                <img class="img-fluid" src="/uploads/<%=banner.image[i]%>" alt="">
+                            </div>
+                            <div class="col-lg-6 mb-0 d-flex align-items-center">
+                                <div class="text-align-left">
+      
+                                    <a class="btn btn-outline-light btn-success py-2 px-4 mt-3 animate__animated animate__fadeInUp"
+                                            href="/loadShop">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row p-5">
+                            <div class="mx-auto col-12">
+                                <img class="img-fluid" src="/uploads/<%=banner.image[i+1]%>" alt="">
+                            </div>
+                            <div class="col-lg-6 mb-0 d-flex align-items-center">
+                                <div class="text-align-left">
+                                    
+                                    <a class="btn btn-outline-light btn-success py-2 px-4 mt-3 animate__animated animate__fadeInUp"
+                                            href="/loadShop">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+            <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+        <% } }
+                             else { %>
+                                <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row p-5">
+                            <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                                <img class="img-fluid" src="/assets/img/banner1.png" alt="">
+                            </div>
+                            <div class="col-lg-6 mb-0 d-flex align-items-center">
+                                <div class="text-align-left align-self-center">
+                                   
+                                    
+                                    <a class="btn btn-outline-light  btn-success py-2 px-4 mt-3 animate__animated animate__fadeInUp"
+                                            href="/loadShop">Shop Now</a>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row p-5">
+                            <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                                <img class="img-fluid" src="./assets/img/banner2.png" alt="">
+                            </div>
+                            <div class="col-lg-6 mb-0 d-flex align-items-center">
+                                <div class="text-align-left">
+                                    
+                                    <a class="btn btn-outline-light btn-success py-2 px-4 mt-3 animate__animated animate__fadeInUp"
+                                            href="/loadShop">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row p-5">
+                            <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                                <img class="img-fluid" src="./assets/img/banner3.png" alt="">
+                            </div>
+                            <div class="col-lg-6 mb-0 d-flex align-items-center">
+                                <div class="text-align-left">
+                                    
+                                
+                                    <a class="btn btn-outline-light btn-success py-2 px-4 mt-3 animate__animated animate__fadeInUp "
+                                            href="/loadShop">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+            <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+                                <%}%>
+
+	
+	<!-- End banner Area -->
+ 
+    
+    
+    <!-- End Banner Hero -->
+
+    <!-- start features Area -->
+	<section class="features-area section_gap">
+		<div class="container">
+			<div class="row features-inner">
+				<!-- single features -->
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="single-features">
+						<div class="f-icon">
+							<img src="assets/img/features/f-icon1.png" alt="">
+						</div>
+						<h6>Free Delivery</h6>
+						<p>Free Shipping on all orders</p>
+					</div>
+				</div>
+				<!-- single features -->
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="single-features">
+						<div class="f-icon">
+							<img src="assets/img/features/f-icon2.png" alt="">
+						</div>
+						<h6>Return Policy</h6>
+						<p>100% Return for all orders</p>
+					</div>
+				</div>
+				<!-- single features -->
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="single-features">
+						<div class="f-icon">
+							<img src="assets/img/features/f-icon3.png" alt="">
+						</div>
+						<h6>24/7 Support</h6>
+						<p>Fast and Simple</p>
+					</div>
+				</div>
+				<!-- single features -->
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="single-features">
+						<div class="f-icon">
+							<img src="assets/img/features/f-icon4.png" alt="">
+						</div>
+						<h6>Secure Payment</h6>
+						<p>Safe Payment is our Priority</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end features Area -->
+
+
+   
+    <!-- Start Categories of The Month -->
+      <section class="" style="background-color: rgb(25, 26, 36);">
+        <div class="row text-center pt-3">
+            <div class="col-lg-6 m-auto">
+               <h1 class="h1" style="color: rgb(249, 230, 25); font-family:'Times New Roman', Times, serif"><b>Most Wanted</b></h1>
+                <p  style="color: aliceblue;">
+                    “Momma always says there"s an awful lot you could tell about a person by their shoes. Where they're going. Where they"ve been.” - Forrest Gump 
+                  </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-3 p-5">
+                <a href="/loadShop?category=3"><img src="./assets/img/oxford1.jpg" class="img-fluid border"></a>
+                <a class="btn btn-outline-light btn-success py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="/loadShop?category=4">Oxfords</a>
+            </div>
+            <div class="col-12 col-md-3 p-5">
+                <a href="/loadShop?category=2"><img src="./assets/img/bb13.jpg" class="img-fluid border"></a>
+                <a class="btn btn-outline-light btn-success py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="/loadShop?category=2">Sneakers</a>
+            </div>
+            <div class="col-12 col-md-3 p-5">
+                <a href="/loadShop?category=1"><img src="./assets/img/bl2.jpg" class="img-fluid border"></a>
+                <a class="btn btn-outline-light btn-success py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="/loadShop?category=1">Loafers</a>
+            </div>
+            <div class="col-12 col-md-3 p-5">
+                <a href="/loadShop?category=0"><img src="./assets/img/bbb4.jpg" class="img-fluid border"></a>
+                <a class="btn btn-container-fluid btn-outline-light btn-success py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="/loadShop?category=0">Boots</a>
+            </div>
+            <div class="col-12 col-md-3 p-5">
+                <a href="/loadShop?category=5"><img src="./assets/img/basket12.jpg" class="img-fluid border"></a>
+                <a class="btn btn-outline-light btn-success py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="/loadShop?category=5">Basket</a>
+            </div>
+            <div class="col-12 col-md-3 p-5">
+                <a href="/loadShop?category=7"><img src="./assets/img/can11.jpg" class="img-fluid border"></a>
+                <a class="btn btn-outline-light btn-success py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="/loadShop?category=7">Canavas</a>
+            </div>
+            <div class="col-12 col-md-3 p-5">
+                <a href="/loadShop?category=6"><img src="./assets/img/running14.jpg" class="img-fluid border"></a>
+                <a class="btn btn-outline-light btn-success py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="/loadShop?category=6">Running</a>
+            </div>
+            <div class="col-12 col-md-3 p-5">
+                <a href="/loadShop?category=4"><img src="./assets/img/trek12.jpg" class="img-fluid border"></a>
+                <a class="btn btn-container-fluid btn-outline-light btn-success py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="/loadShop?category=4">Trekking</a>
+            </div>
+        </div>
+    </section>
+    <!-- End Categories of The Month -->
+
+
+	<!-- Start Featured Product -->
+	<section class="" style="background-color: rgb(36, 37, 54);">
+		<div class="container py-5">
+			<div class="row text-center py-3">
+				<div class="col-lg-6 m-auto">
+					<h1 class="h1" style="color: rgb(249, 230, 25); font-family: 'Times New Roman', Times, serif"><b>FEATURED</b></h1>
+				</div>
+			</div>
+	
+			<div class="row">
+				<% for(i=0; i < product.length; i++){ %>
+				<div class="col-12 col-sm-6 col-md-3 mb-4">
+					<div class="card h-100">
+						<a href="/view-details?id=<%=product[i]._id%>">
+							<img src="/uploads/<%=product[i].image[0]%>" class="card-img-top" alt="...">
+						</a>
+						<div class="card-body">
+							<ul class="list-unstyled d-flex justify-content-between">
+								<li class="text-dark text-centre">Rs <%=product[i].price%>/-</li>
+							</ul>
+							<a href="/view-details?id=<%=product[i]._id%>" class="h2 text-decoration-none text-dark text-centre"><%=product[i].name%></a>
+							<p class="card-text">
+								<%=product[i].description%>
+							</p>
+							
+						</div>
+					</div>
+				</div>
+				<%}%>
+			</div>
+		</div>
+	</section>
+	
+	<!-- End Featured Product -->
+
+	<style>
+		.card:hover {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			transform: translateY(-2px);
+			transition: box-shadow 0.3s, transform 0.3s;
+		}
+	
+		.card:hover .card-img-top {
+			opacity: 0.7;
+			transition: opacity 0.3s;
+		}
+	
+		.card-img-top {
+			transition: opacity 0.3s;
+		}
+	
+		.card-body {
+			padding: 1.25rem;
+		}
+	
+		.card-text {
+			margin-bottom: 1rem;
+		}
+	</style>
+	
+    
+       
+   
+  
+
+    <%- include('../layouts/footer.ejs') %>
+    </div>
